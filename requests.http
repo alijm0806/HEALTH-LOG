@@ -1,1 +1,8 @@
+### VITAMINS INDEX
 GET http://localhost:3000/vitamins
+
+
+### VITAMINS SHOW
+GET http://localhost:3000/vitamins/3
+
+
