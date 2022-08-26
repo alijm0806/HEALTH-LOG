@@ -4,14 +4,15 @@ GET http://localhost:3000/vitamins
 
 ### VITAMINS SHOW
 GET http://localhost:3000/vitamins/3
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzIyMjh9.llFblH3MXnGFpuypm7hobDW5slJFmkfjda6p5124LO4
+
 
 ### VITAMINS CREATE
 POST http://localhost:3000/vitamins
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE2MzgwOTJ9.DvW3aogxrfxXnhgm0UDbnuTD2gXF7vCktrz1Ev3VjpE
 Content-Type: application/json
 
 {
-  "name": "Vitamin B2"
+  "name": "Vitamin B4"
 }
 
 ### VITAMINS UPDATE
@@ -32,8 +33,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "email": "test@test.com",
+  "name": "admin",
+  "email": "admin@admin.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -44,7 +45,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "first@first.com",
   "password": "password"
 }
 

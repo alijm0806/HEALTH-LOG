@@ -1,15 +1,14 @@
 class VitaminsController < ApplicationController
+  before_action :authenticate_admin, only: [:create, :update, :destroy]
+
   def index
     vitamins = Vitamin.all
     render json: vitamins.as_json
   end
 
   def show
-    if current_user
-      vitamin = Vitamin.find_by(id: params[:id])
-
-      render json: vitamin.as_json
-    end
+    vitamin = Vitamin.find_by(id: params[:id])
+    render json: vitamin.as_json
   end
 
   def create
