@@ -4,7 +4,7 @@ GET http://localhost:3000/vitamins
 
 ### VITAMINS SHOW
 GET http://localhost:3000/vitamins/3
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzIyMjh9.llFblH3MXnGFpuypm7hobDW5slJFmkfjda6p5124LO4
 
 
 
@@ -28,3 +28,6 @@ Content-Type: application/json
   "email": "test@test.com",
   "password": "password"
 }
+
+
+
