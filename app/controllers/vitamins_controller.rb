@@ -11,4 +11,19 @@ class VitaminsController < ApplicationController
       render json: vitamin.as_json
     end
   end
+
+  def create
+    vitamin = Vitamin.new(
+      name: params[:name],
+    )
+    vitamin.save
+    render json: vitamin.as_json
+  end
+
+  def update
+    vitamin = Vitamin.find_by(id: params[:id])
+    vitamin.name = params[:name]
+    vitamin.save
+    render json: vitamin.as_json
+  end
 end

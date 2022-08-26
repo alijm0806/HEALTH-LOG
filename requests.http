@@ -6,6 +6,23 @@ GET http://localhost:3000/vitamins
 GET http://localhost:3000/vitamins/3
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzIyMjh9.llFblH3MXnGFpuypm7hobDW5slJFmkfjda6p5124LO4
 
+### VITAMINS CREATE
+POST http://localhost:3000/vitamins
+Content-Type: application/json
+
+{
+  "name": "Vitamin B2"
+}
+
+### VITAMINS UPDATE
+PATCH http://localhost:3000/vitamins/3
+Content-Type: application/json
+
+{
+  "name": "Vitamin B3"
+}
+
+
 
 
 ### user create (sign up)

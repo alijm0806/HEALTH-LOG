@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   get "/vitamins" => "vitamins#index"
   get "/vitamins/:id" => "vitamins#show"
-
+  post "/vitamins" => "vitamins#create"
+  patch "/vitamins/:id" => "vitamins#update"
   ###
   post "/users" => "users#create"
 
