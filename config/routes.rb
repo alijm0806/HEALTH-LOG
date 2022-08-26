@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   get "/vitamins" => "vitamins#index"
   get "/vitamins/:id" => "vitamins#show"
+
+  post "/users" => "users#create"
 end

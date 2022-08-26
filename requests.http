@@ -6,3 +6,17 @@ GET http://localhost:3000/vitamins
 GET http://localhost:3000/vitamins/3
 
 
+
+
+### user create (sign up)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+
