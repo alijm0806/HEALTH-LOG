@@ -26,4 +26,10 @@ class VitaminsController < ApplicationController
     vitamin.save
     render json: vitamin.as_json
   end
+
+  def destroy
+    vitamin = Vitamin.find_by(id: params[:id])
+    vitamin.destroy
+    render json: { message: "The selected vitamins has been removed" }
+  end
 end

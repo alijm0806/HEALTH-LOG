@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get "/vitamins/:id" => "vitamins#show"
   post "/vitamins" => "vitamins#create"
   patch "/vitamins/:id" => "vitamins#update"
+  delete "/vitamins/:id" => "vitamins#destroy"
+
   ###
   post "/users" => "users#create"
 
