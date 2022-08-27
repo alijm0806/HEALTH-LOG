@@ -1,0 +1,7 @@
+@vitamins.map do |vitamin|
+  {
+    id: vitamin.id,
+    description: vitamin.description,
+
+  }
+end

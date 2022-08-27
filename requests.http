@@ -1,30 +1,33 @@
 ### VITAMINS INDEX
-GET http://localhost:3000/vitamins
+GET http://localhost:3000/vitamins.json
 
 
 ### VITAMINS SHOW
-GET http://localhost:3000/vitamins/3
+GET http://localhost:3000/vitamins/3.json
 
 
 ### VITAMINS CREATE
-POST http://localhost:3000/vitamins
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE2MzgwOTJ9.DvW3aogxrfxXnhgm0UDbnuTD2gXF7vCktrz1Ev3VjpE
+POST http://localhost:3000/vitamins.json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2ODk2Mjh9.g6epaGkcCgj9dJUqucOaFrcafxbhFXXUlWjvtWNSDOU
 Content-Type: application/json
 
 {
-  "name": "Vitamin B4"
+  "name": "Vitamin B Complex",
+  "description": ""
 }
 
 ### VITAMINS UPDATE
-PATCH http://localhost:3000/vitamins/3
+PATCH http://localhost:3000/vitamins/3.json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2ODk2Mjh9.g6epaGkcCgj9dJUqucOaFrcafxbhFXXUlWjvtWNSDOU
 Content-Type: application/json
 
 {
-  "name": "Vitamin B3"
+  "name": "Vitamin B3",
+  "description": "Helps convert food into energy"
 }
 
 ### VITAMINS DELETE
-DELETE http://localhost:3000/vitamins/6
+DELETE http://localhost:3000/vitamins/6.json
 
 
 
@@ -45,7 +48,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "first@first.com",
+  "email": "admin@admin.com",
   "password": "password"
 }
 
