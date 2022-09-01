@@ -1,0 +1,2 @@
+class ListOfVitaminsController < ApplicationController
+end
