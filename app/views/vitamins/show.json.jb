@@ -3,4 +3,8 @@
   description: @vitamin.description,
   created_at: @vitamin.created_at,
   updated_at: @vitamin.updated_at,
+  sources: @vitamin.sources,
+  used_for: @vitamin.used_for,
+  users: @vitamin.users,
+  list_of_vitamins: @vitamin.list_of_vitamins,
 }

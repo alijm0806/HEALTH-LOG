@@ -15,17 +15,22 @@ class VitaminsController < ApplicationController
     @vitamin = Vitamin.new(
       name: params[:name],
       description: params[:description],
+      name: params[:name],
+      sources: params[:sources],
+      used_for: params[:used_for],
     )
     @vitamin.save
     render template: "vitamins/show"
   end
 
   def update
-    @vitamin = Vitamin.find_by(id: params[:id])
-    @vitamin.name = params[:name]
-    @vitamin.description = params[:description]
-    @vitamin.save
-    render template: "vitamins/show"
+    vitamin = Vitamin.find_by(id: params[:id])
+    vitamin.name = params[:name]
+    vitamin.description = params[:description]
+    vitamin.sources = params[:sources]
+    vitamin.used_for = params[:used_for]
+    vitamin.save
+    render json: vitamin.as_json
   end
 
   def destroy

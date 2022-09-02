@@ -3,7 +3,7 @@ GET http://localhost:3000/vitamins.json
 
 
 ### VITAMINS SHOW
-GET http://localhost:3000/vitamins/3.json
+GET http://localhost:3000/vitamins/1.json
 
 
 ### VITAMINS CREATE
@@ -13,7 +13,9 @@ Content-Type: application/json
 
 {
   "name": "Vitamin B Complex",
-  "description": ""
+  "description": "",
+  "sources": "",
+  "used_for": ""
 }
 
 ### VITAMINS UPDATE
@@ -23,7 +25,9 @@ Content-Type: application/json
 
 {
   "name": "Vitamin B3",
-  "description": "Helps convert food into energy"
+  "description": "Helps convert food into energy",
+  "sources": "",
+  "used_for": ""
 }
 
 ### VITAMINS DELETE
