@@ -40,8 +40,9 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "admin",
-  "email": "admin@admin.com",
+  "first_name": "Peter",
+  "last_": "Dubois",
+  "email": "peter@peter.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -56,5 +57,27 @@ Content-Type: application/json
   "password": "password"
 }
 
+### LIST-OF-VITAMINS INDEX
+GET http://localhost:3000/list_of_vitamins
 
+### LIST-OF-VITAMINS create
+POST http://localhost:3000/list_of_vitamins
+Content-Type: application/json
 
+{
+"user_id": 2,
+ "vitamin_id": 1,
+ "quantity": 3
+
+}
+
+### LIST-OF-VITAMINS UPDATE
+PATCH http://localhost:3000/list_of_vitamins/3
+Content-Type: application/json
+
+{
+  
+"user_id": 2,
+ "vitamin_id": 1,
+ "quantity": 4
+}

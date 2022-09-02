@@ -15,7 +15,6 @@ class VitaminsController < ApplicationController
     @vitamin = Vitamin.new(
       name: params[:name],
       description: params[:description],
-      name: params[:name],
       sources: params[:sources],
       used_for: params[:used_for],
     )
