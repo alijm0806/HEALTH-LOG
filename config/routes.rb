@@ -20,4 +20,5 @@ Rails.application.routes.draw do
   get "/list_of_vitamins" => "list_of_vitamins#index"
   post "/list_of_vitamins" => "list_of_vitamins#create"
   patch "/list_of_vitamins/:id" => "list_of_vitamins#update"
+  delete "/list_of_vitamins/:id" => "list_of_vitamins#destroy"
 end

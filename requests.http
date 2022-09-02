@@ -81,3 +81,6 @@ Content-Type: application/json
  "vitamin_id": 1,
  "quantity": 4
 }
+
+### LIST-OF-VITAMINS DELETE
+DELETE http://localhost:3000/list_of_vitamins/7.json
