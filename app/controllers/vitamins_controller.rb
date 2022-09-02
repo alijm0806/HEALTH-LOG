@@ -19,8 +19,11 @@ class VitaminsController < ApplicationController
       sources: params[:sources],
       used_for: params[:used_for],
     )
-    @vitamin.save
-    render template: "vitamins/show"
+    if @vitamin.save
+      render template: "vitamins/show"
+    else
+      render json: @vitamin.errors.full_messages, status: 422
+    end
   end
 
   def update
