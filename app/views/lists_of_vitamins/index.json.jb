@@ -1,0 +1,6 @@
+@lists_of_vitamins.map do |lists_of_vitamin|
+  {
+    id: lists_of_vitamin.id,
+
+  }
+end

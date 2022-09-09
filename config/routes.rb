@@ -17,8 +17,8 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   ###
-  get "/list_of_vitamins" => "list_of_vitamins#index"
-  post "/list_of_vitamins" => "list_of_vitamins#create"
-  patch "/list_of_vitamins/:id" => "list_of_vitamins#update"
-  delete "/list_of_vitamins/:id" => "list_of_vitamins#destroy"
+  get "/lists_of_vitamins" => "lists_of_vitamins#index"
+  post "/lists_of_vitamins" => "lists_of_vitamins#create"
+  patch "/lists_of_vitamins/:id" => "lists_of_vitamins#update"
+  delete "/lists_of_vitamins/:id" => "lists_of_vitamins#destroy"
 end

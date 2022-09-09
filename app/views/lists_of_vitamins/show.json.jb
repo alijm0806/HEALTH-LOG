@@ -1,0 +1,5 @@
+{
+  id: @list_of_vitamin.id,
+  created_at: @list_of_vitamin.created_at,
+  updated_at: @list_of_vitamin.updated_at,
+}

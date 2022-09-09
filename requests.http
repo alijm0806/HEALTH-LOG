@@ -33,10 +33,10 @@ Content-Type: application/json
 ### VITAMINS DELETE
 DELETE http://localhost:3000/vitamins/6.json
 
-
+###############USERS#######################################
 
 ### user create (sign up)
-POST http://localhost:3000/users.json
+POST http://localhost:3000/users
 Content-Type: application/json
 
 {
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 
 ### Sessions create (login)
-POST http://localhost:3000/sessions.json
+POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
@@ -57,11 +57,14 @@ Content-Type: application/json
   "password": "password"
 }
 
+
+###############LIST-OF-VITAMINS#######################################
+
 ### LIST-OF-VITAMINS INDEX
-GET http://localhost:3000/list_of_vitamins
+GET http://localhost:3000/lists_of_vitamins.json
 
 ### LIST-OF-VITAMINS create
-POST http://localhost:3000/list_of_vitamins
+POST http://localhost:3000/lists_of_vitamins.json
 Content-Type: application/json
 
 {
@@ -72,7 +75,7 @@ Content-Type: application/json
 }
 
 ### LIST-OF-VITAMINS UPDATE
-PATCH http://localhost:3000/list_of_vitamins/3
+PATCH http://localhost:3000/lists_of_vitamins/3
 Content-Type: application/json
 
 {
@@ -83,4 +86,4 @@ Content-Type: application/json
 }
 
 ### LIST-OF-VITAMINS DELETE
-DELETE http://localhost:3000/list_of_vitamins/7.json
+DELETE http://localhost:3000/lists_of_vitamins/7.json

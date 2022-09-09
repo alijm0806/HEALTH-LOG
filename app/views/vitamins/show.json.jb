@@ -1,5 +1,6 @@
 {
   id: @vitamin.id,
+  name: @vitamin.name,
   description: @vitamin.description,
   created_at: @vitamin.created_at,
   updated_at: @vitamin.updated_at,
