@@ -1,6 +1,9 @@
 @lists_of_vitamins.map do |lists_of_vitamin|
   {
     id: lists_of_vitamin.id,
+    user_id: lists_of_vitamin.user_id,
+    vitamin_id: lists_of_vitamin.vitamin_id,
+    quantity: lists_of_vitamin.quantity,
 
   }
 end

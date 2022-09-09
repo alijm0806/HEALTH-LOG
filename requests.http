@@ -53,7 +53,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "admin@admin.com",
+  "email": "jhon@jhon.com",
   "password": "password"
 }
 
@@ -62,6 +62,7 @@ Content-Type: application/json
 
 ### LIST-OF-VITAMINS INDEX
 GET http://localhost:3000/lists_of_vitamins.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI4MzM0Mjd9.MUsYHhG8NxU2cO0H7zsuBtvgefDVssm9uXfDBBswcY8
 
 ### LIST-OF-VITAMINS create
 POST http://localhost:3000/lists_of_vitamins.json

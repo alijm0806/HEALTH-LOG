@@ -1,7 +1,11 @@
 class ListsOfVitaminsController < ApplicationController
   def index
-    @lists_of_vitamins = ListOfVitamin.all
-    render template: "lists_of_vitamins/index"
+    @lists_of_vitamins = ListOfVitamin.where(user_id: current_user.id)
+    if current_user
+      render template: "lists_of_vitamins/index"
+    else
+      render json: {}, status: :unauthorized
+    end
   end
 
   def create
