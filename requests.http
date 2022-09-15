@@ -47,13 +47,12 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
-
 ### Sessions create (login)
 POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "jhon@jhon.com",
+  "email": "mike@mike.com",
   "password": "password"
 }
 
@@ -62,28 +61,27 @@ Content-Type: application/json
 
 ### LIST-OF-VITAMINS INDEX
 GET http://localhost:3000/lists_of_vitamins.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjI4MzM0Mjd9.MUsYHhG8NxU2cO0H7zsuBtvgefDVssm9uXfDBBswcY8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NjMyODUzNzV9.QeOzDh26izNmlQ4wkTglm1unuO6Y7NXf_zRBOlL5rWQ
 
 ### LIST-OF-VITAMINS create
 POST http://localhost:3000/lists_of_vitamins.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjMyOTcwNTV9.yLQ1KMBjDH6DqQbc9xKbuSKbMAi2HMV1fzxhPJr30Ck
 Content-Type: application/json
 
 {
-"user_id": 2,
- "vitamin_id": 1,
- "quantity": 3
+
+ "vitamin_id": 7,
+ "quantity": 4
 
 }
 
 ### LIST-OF-VITAMINS UPDATE
-PATCH http://localhost:3000/lists_of_vitamins/3
+PATCH http://localhost:3000/lists_of_vitamins/6
 Content-Type: application/json
 
 {
-  
-"user_id": 2,
- "vitamin_id": 1,
- "quantity": 4
+"intake_quantity": 0,
+"intake_quantity_left": 4
 }
 
 ### LIST-OF-VITAMINS DELETE

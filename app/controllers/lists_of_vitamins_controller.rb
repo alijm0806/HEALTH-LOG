@@ -9,29 +9,35 @@ class ListsOfVitaminsController < ApplicationController
   end
 
   def create
-    @lists_of_vitamin = ListsOfVitamin.new(
-      user_id: params[:user_id],
+    # calculated_intake_quantity_left = vitamin.quantity - vitamin.intake_quantity
+
+    @lists_of_vitamin = ListOfVitamin.new(
+      user_id: current_user.id,
       vitamin_id: params[:vitamin_id],
       quantity: params[:quantity],
       intake_quantity: 0,
       intake_quantity_left: params[:quantity],
     )
-    if lists_of_vitamin.save
-      render template: "list_of_vitamins/show"
+    if @lists_of_vitamin.save
+      render template: "lists_of_vitamins/show"
     else
-      render json: lists_of_vitamin.errors.full_messages, status: 422
+      render json: @lists_of_vitamin.errors.full_messages, status: 422
     end
   end
 
   def update
-    lists_of_vitamin = ListsOfVitamin.find_by(id: params[:id])
+    lists_of_vitamin = ListOfVitamin.find_by(id: params[:id])
     lists_of_vitamin.user_id = params[:user_id] || lists_of_vitamin.user_id
     lists_of_vitamin.vitamin_id = params[:vitamin_id] || lists_of_vitamin.vitamin_id
     lists_of_vitamin.quantity = params[:quantity] || lists_of_vitamin.quantity
     lists_of_vitamin.intake_quantity = params[:intake_quantity]
     lists_of_vitamin.intake_quantity_left = params[:intake_quantity_left] || lists_of_vitamin.intake_quantity_left
     lists_of_vitamin.save
-    render template: "list_of_vitamins/show"
+    if lists_of_vitamin.save
+      render json: lists_of_vitamin.as_json
+    else
+      render json: lists_of_vitamin.errors.full_messages, status: 422
+    end
   end
 
   def destroy
