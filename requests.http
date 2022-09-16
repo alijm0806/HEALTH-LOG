@@ -61,11 +61,11 @@ Content-Type: application/json
 
 ### LIST-OF-VITAMINS INDEX
 GET http://localhost:3000/lists_of_vitamins.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NjMyODUzNzV9.QeOzDh26izNmlQ4wkTglm1unuO6Y7NXf_zRBOlL5rWQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjMzODA1MDd9.yViNoEeRIAV57sqPksRxXSbtoPSkhP9JKS_BWYQkGGE
 
 ### LIST-OF-VITAMINS create
 POST http://localhost:3000/lists_of_vitamins.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjMyOTcwNTV9.yLQ1KMBjDH6DqQbc9xKbuSKbMAi2HMV1fzxhPJr30Ck
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjMzODA1MDd9.yViNoEeRIAV57sqPksRxXSbtoPSkhP9JKS_BWYQkGGE
 Content-Type: application/json
 
 {
@@ -76,7 +76,7 @@ Content-Type: application/json
 }
 
 ### LIST-OF-VITAMINS UPDATE
-PATCH http://localhost:3000/lists_of_vitamins/6
+PATCH http://localhost:3000/lists_of_vitamins/241
 Content-Type: application/json
 
 {
@@ -85,4 +85,4 @@ Content-Type: application/json
 }
 
 ### LIST-OF-VITAMINS DELETE
-DELETE http://localhost:3000/lists_of_vitamins/7.json
+DELETE http://localhost:3000/lists_of_vitamins/241.json

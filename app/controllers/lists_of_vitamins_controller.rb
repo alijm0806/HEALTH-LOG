@@ -41,8 +41,8 @@ class ListsOfVitaminsController < ApplicationController
   end
 
   def destroy
-    lists_of_vitamin = ListsOfVitamin.find_by(id: params[:id])
+    lists_of_vitamin = ListOfVitamin.find_by(id: params[:id])
     lists_of_vitamin.destroy
-    render json: { message: "you have removed the selected product" }
+    render json: { message: "you have removed the selected list" }
   end
 end
