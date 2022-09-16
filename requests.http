@@ -3,7 +3,7 @@ GET http://localhost:3000/vitamins.json
 
 
 ### VITAMINS SHOW
-GET http://localhost:3000/vitamins/1.json
+GET http://localhost:3000/vitamins/7.json
 
 
 ### VITAMINS CREATE
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 {
 
- "vitamin_id": 7,
+ "vitamin_id": 10,
  "quantity": 4
 
 }

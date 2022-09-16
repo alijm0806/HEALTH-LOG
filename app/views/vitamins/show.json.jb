@@ -7,5 +7,6 @@
   sources: @vitamin.sources,
   used_for: @vitamin.used_for,
   users: @vitamin.users,
+  stats: User.all.count,
   list_of_vitamins: @vitamin.list_of_vitamins,
 }
