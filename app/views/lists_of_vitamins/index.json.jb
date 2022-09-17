@@ -3,6 +3,7 @@
     id: lists_of_vitamin.id,
     user_id: lists_of_vitamin.user_id,
     vitamin_id: lists_of_vitamin.vitamin_id,
+    time: lists_of_vitamin.time,
     quantity: lists_of_vitamin.quantity,
     intake_quantity: lists_of_vitamin.intake_quantity,
     intake_quantity_left: lists_of_vitamin.intake_quantity_left,
