@@ -8,9 +8,16 @@ class ListsOfVitaminsController < ApplicationController
     end
   end
 
-  def create
-    # calculated_intake_quantity_left = vitamin.quantity - vitamin.intake_quantity
+  def show
+    @lists_of_vitamin = ListOfVitamin.find_by(id: params[:id])
+    if current_user
+      render template: "lists_of_vitamins/show"
+    else
+      render json: {}, status: :unauthorized
+    end
+  end
 
+  def create
     @lists_of_vitamin = ListOfVitamin.new(
       user_id: current_user.id,
       vitamin_id: params[:vitamin_id],
@@ -18,6 +25,7 @@ class ListsOfVitaminsController < ApplicationController
       intake_quantity: 0,
       intake_quantity_left: params[:quantity],
     )
+
     if @lists_of_vitamin.save
       render template: "lists_of_vitamins/show"
     else

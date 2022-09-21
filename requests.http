@@ -61,27 +61,33 @@ Content-Type: application/json
 
 ### LIST-OF-VITAMINS INDEX
 GET http://localhost:3000/lists_of_vitamins.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM1MDcxNTR9.uMDudLkRuHLRAYQKcDidFCzrULxQzDdTuVTHiOq7b2A
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM2Mjk1Mzd9.c88UPr0R3TJ8SZySlTznO6FaGMjtcGm0KeiUwFRzkTY
+
+### LIST-OF-VITAMINS SHOW
+GET http://localhost:3000/lists_of_vitamins/286.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM3NzM1NzB9.7ntfiRh2NkQCQeo7DM64IdQvK7mTNV_98YbUiTLXByU
+
 
 ### LIST-OF-VITAMINS create
 POST http://localhost:3000/lists_of_vitamins.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjMzODA1MDd9.yViNoEeRIAV57sqPksRxXSbtoPSkhP9JKS_BWYQkGGE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM2Mjk1Mzd9.c88UPr0R3TJ8SZySlTznO6FaGMjtcGm0KeiUwFRzkTY
 Content-Type: application/json
 
 {
 
  "vitamin_id": 10,
- "quantity": 4
+ "quantity": 3
 
 }
 
 ### LIST-OF-VITAMINS UPDATE
-PATCH http://localhost:3000/lists_of_vitamins/258
+PATCH http://localhost:3000/lists_of_vitamins/285
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM2Mjk1Mzd9.c88UPr0R3TJ8SZySlTznO6FaGMjtcGm0KeiUwFRzkTY
 Content-Type: application/json
 
 {
-"intake_quantity": 0,
-"intake_quantity_left": 4
+"intake_quantity": 1,
+"intake_quantity_left": 3
 }
 
 ### LIST-OF-VITAMINS DELETE

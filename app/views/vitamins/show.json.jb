@@ -1,10 +1,11 @@
 {
   id: @vitamin.id,
   name: @vitamin.name,
-  description: @vitamin.description,
+  image_url: @vitamin.image_url,
+  descriptions: @vitamin.descriptions,
   created_at: @vitamin.created_at,
   updated_at: @vitamin.updated_at,
-  sources: @vitamin.sources,
+  images: @vitamin.images,
   used_for: @vitamin.used_for,
   users: @vitamin.users,
   stats: User.all.count,
