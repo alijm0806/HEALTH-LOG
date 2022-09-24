@@ -18,12 +18,13 @@ class ListsOfVitaminsController < ApplicationController
   end
 
   def create
+    params[:intake_quantity_left] = params[:quantity]
     @lists_of_vitamin = ListOfVitamin.new(
       user_id: current_user.id,
       vitamin_id: params[:vitamin_id],
       quantity: params[:quantity],
       intake_quantity: 0,
-      intake_quantity_left: params[:quantity],
+      intake_quantity_left: params[:intake_quantity_left],
     )
 
     if @lists_of_vitamin.save

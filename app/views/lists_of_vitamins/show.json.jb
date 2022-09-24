@@ -7,5 +7,6 @@
   intake_quantity_left: @lists_of_vitamin.intake_quantity_left,
   vitamin: @lists_of_vitamin.vitamin,
   user: @lists_of_vitamin.user,
-
+  created_at: @lists_of_vitamin.created_at,
+  updated_at: @lists_of_vitamin.updated_at,
 }

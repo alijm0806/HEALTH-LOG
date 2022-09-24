@@ -40,9 +40,9 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "first_name": "Peter",
-  "last_": "Dubois",
-  "email": "peter@peter.com",
+  "first_name": "Mary",
+  "last_name": "Blanc",
+  "email": "mary@mary.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -61,34 +61,34 @@ Content-Type: application/json
 
 ### LIST-OF-VITAMINS INDEX
 GET http://localhost:3000/lists_of_vitamins.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM2Mjk1Mzd9.c88UPr0R3TJ8SZySlTznO6FaGMjtcGm0KeiUwFRzkTY
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM5NDczMjR9.VmsOeSKAm7LRZSVr5mr7L4MliBqZm-JdI_nRYFY0h50
 
 ### LIST-OF-VITAMINS SHOW
 GET http://localhost:3000/lists_of_vitamins/286.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM3NzM1NzB9.7ntfiRh2NkQCQeo7DM64IdQvK7mTNV_98YbUiTLXByU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM5NDczMjR9.VmsOeSKAm7LRZSVr5mr7L4MliBqZm-JdI_nRYFY0h50
 
 
 ### LIST-OF-VITAMINS create
 POST http://localhost:3000/lists_of_vitamins.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM2Mjk1Mzd9.c88UPr0R3TJ8SZySlTznO6FaGMjtcGm0KeiUwFRzkTY
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM5NTM1MTZ9.rqehwN1X1cRqMKqRR-FMQkLZWWTzWCw8UTZhWtz5Of0
 Content-Type: application/json
 
 {
 
- "vitamin_id": 10,
- "quantity": 3
+ "vitamin_id": 7
 
 }
 
 ### LIST-OF-VITAMINS UPDATE
-PATCH http://localhost:3000/lists_of_vitamins/285
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM2Mjk1Mzd9.c88UPr0R3TJ8SZySlTznO6FaGMjtcGm0KeiUwFRzkTY
+PATCH http://localhost:3000/lists_of_vitamins/361.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM5NDczMjR9.VmsOeSKAm7LRZSVr5mr7L4MliBqZm-JdI_nRYFY0h50
 Content-Type: application/json
 
 {
-"intake_quantity": 1,
-"intake_quantity_left": 3
+"quantity": 4,
+"intake_quantity": 1
+
 }
 
 ### LIST-OF-VITAMINS DELETE
-DELETE http://localhost:3000/lists_of_vitamins/258.json
+DELETE http://localhost:3000/lists_of_vitamins/307.json
