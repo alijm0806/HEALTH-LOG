@@ -21,4 +21,18 @@ Rails.application.routes.draw do
   post "/lists_of_vitamins" => "lists_of_vitamins#create"
   patch "/lists_of_vitamins/:id" => "lists_of_vitamins#update"
   delete "/lists_of_vitamins/:id" => "lists_of_vitamins#destroy"
+
+  ###
+  get "/appointments" => "appointments#index"
+  get "/appointments/:id" => "appointments#show"
+  post "/appointments" => "appointments#create"
+  patch "/appointments/:id" => "appointments#update"
+  delete "/appointments/:id" => "appointments#destroy"
+
+  ###
+  get "/doctors" => "doctors#index"
+  get "/doctors/:id" => "doctors#show"
+  post "/doctors" => "doctors#create"
+  patch "/doctors/:id" => "doctors#update"
+  delete "/doctors/:id" => "doctors#destroy"
 end

@@ -10,9 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_24_205349) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_29_185615) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "appointments", force: :cascade do |t|
+    t.string "doctor_id"
+    t.datetime "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.string "address"
+    t.string "phone_number"
+    t.float "lat"
+    t.float "lon"
+  end
+
+  create_table "doctors", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "speciality"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "list_of_vitamins", force: :cascade do |t|
     t.integer "user_id"
@@ -44,7 +65,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_24_205349) do
     t.string "image_url"
     t.string "used_for"
     t.string "images"
-    t.text "descriptions"
+    t.text "deficiency"
   end
 
 end

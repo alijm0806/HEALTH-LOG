@@ -4,4 +4,6 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   has_many :list_of_vitamins
   has_many :vitamins, through: :list_of_vitamins
+  has_many :appointments
+  has_many :doctors, through: :appointments
 end

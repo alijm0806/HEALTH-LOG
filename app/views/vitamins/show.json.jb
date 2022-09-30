@@ -2,7 +2,7 @@
   id: @vitamin.id,
   name: @vitamin.name,
   image_url: @vitamin.image_url,
-  descriptions: @vitamin.descriptions,
+  deficiency: @vitamin.deficiency,
   created_at: @vitamin.created_at,
   updated_at: @vitamin.updated_at,
   images: @vitamin.images,

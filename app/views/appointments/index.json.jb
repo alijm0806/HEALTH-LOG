@@ -1,0 +1,16 @@
+@appointments.map do |appointment|
+  {
+    id: appointment.id,
+    doctor_id: appointment.doctor_id,
+    date: appointment.date.strftime("%A, %^b-%d-%Y, %I:%M%p"),
+    address: appointment.address,
+    phone_number: appointment.phone_number.gsub(/^(\d{3})(\d+)(\d{4})$/, '\1-\2-\3'),
+    user_id: appointment.user_id,
+    lat: appointment.lat,
+    lon: appointment.lon,
+    user: appointment.user,
+    doctor: appointment.doctor,
+    created_at: appointment.created_at,
+    updated_at: appointment.updated_at,
+  }
+end

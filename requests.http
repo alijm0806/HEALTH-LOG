@@ -62,13 +62,13 @@ Content-Type: application/json
 
 ###############LIST-OF-VITAMINS#######################################
 
-### LIST-OF-VITAMINS INDEX
+### Appointments
 GET http://localhost:3000/lists_of_vitamins.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM5NDczMjR9.VmsOeSKAm7LRZSVr5mr7L4MliBqZm-JdI_nRYFY0h50
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzODA2NzB9.QicMuQR6nqyxfona3X4EfD_c9lg697NB3p2NnwKwY9o
 
 ### LIST-OF-VITAMINS SHOW
-GET http://localhost:3000/lists_of_vitamins/286.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM5NDczMjR9.VmsOeSKAm7LRZSVr5mr7L4MliBqZm-JdI_nRYFY0h50
+GET http://localhost:3000/lists_of_vitamins/486.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzODA2NzB9.QicMuQR6nqyxfona3X4EfD_c9lg697NB3p2NnwKwY9o
 
 
 ### LIST-OF-VITAMINS create
@@ -83,15 +83,90 @@ Content-Type: application/json
 }
 
 ### LIST-OF-VITAMINS UPDATE
-PATCH http://localhost:3000/lists_of_vitamins/361.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM5NDczMjR9.VmsOeSKAm7LRZSVr5mr7L4MliBqZm-JdI_nRYFY0h50
+PATCH http://localhost:3000/lists_of_vitamins/485.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQ0MDg0NTl9.6ASdOn0LDzQpefNYvoZbhiuvhXAF0bFbK_-ts-ROhQg
 Content-Type: application/json
 
 {
-"quantity": 4,
-"intake_quantity": 1
+"quantity": 4
+
 
 }
 
 ### LIST-OF-VITAMINS DELETE
 DELETE http://localhost:3000/lists_of_vitamins/307.json
+
+
+
+###############--APPOINTMENTS--#######################################
+
+### APPOINTMENTS INDEX
+GET http://localhost:3000/appointments.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzODA2NzB9.QicMuQR6nqyxfona3X4EfD_c9lg697NB3p2NnwKwY9o
+
+### Appointments SHOW
+GET http://localhost:3000/appointments/19.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzODA2NzB9.QicMuQR6nqyxfona3X4EfD_c9lg697NB3p2NnwKwY9o
+
+
+### Appointments create
+POST http://localhost:3000/appointments.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzOTkzOTF9.TujMkY1Zmqd4NyTdq40MqDPrRjNJw-SiEMmHWQy3J9o
+Content-Type: application/json
+
+{
+  "address": "san francisco,ca",
+ "doctor_id": 10,
+"date": "2022-09-30",
+"phone_number": 4154180162
+
+}
+
+### Appointments UPDATE
+PATCH http://localhost:3000/appointments/3.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQ0MDgxMzV9.P4Ke2U1c6Rxfoqtb4TQsIDYdOsWU9uV4IRq-0nFF9Io
+Content-Type: application/json
+
+{
+"doctor_id": 4,
+"date": "2022-09-26"
+
+}
+
+### LIST-OF-VITAMINS DELETE
+DELETE http://localhost:3000/appointments/4.json
+
+
+###############--doctors--#######################################
+
+### doctors INDEX
+GET http://localhost:3000/doctors.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzODA2NzB9.QicMuQR6nqyxfona3X4EfD_c9lg697NB3p2NnwKwY9o
+
+### doctors SHOW
+GET http://localhost:3000/doctors/1.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzODA2NzB9.QicMuQR6nqyxfona3X4EfD_c9lg697NB3p2NnwKwY9o
+
+
+### doctors create
+POST http://localhost:3000/doctors.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzOTkzOTF9.TujMkY1Zmqd4NyTdq40MqDPrRjNJw-SiEMmHWQy3J9o
+Content-Type: application/json
+
+{
+ "speciality": "Urology"
+
+}
+
+### doctors UPDATE
+PATCH http://localhost:3000/doctors/3.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQzOTkzOTF9.TujMkY1Zmqd4NyTdq40MqDPrRjNJw-SiEMmHWQy3J9o
+Content-Type: application/json
+
+{
+"doctor_id": 1
+
+}
+
+### LIST-OF-VITAMINS DELETE
+DELETE http://localhost:3000/doctors/3.json

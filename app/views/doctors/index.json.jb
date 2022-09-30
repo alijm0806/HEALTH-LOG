@@ -1,0 +1,6 @@
+@doctors.map do |doctor|
+  {
+    id: doctor.id,
+    url: doctor_url(doctor, format: :json)
+  }
+end
