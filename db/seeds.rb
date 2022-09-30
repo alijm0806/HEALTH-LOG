@@ -20,3 +20,4 @@ Vitamin.create(
      images: "https://previews.123rf.com/images/svshot/svshot1802/svshot180200037/96264324-gold-pill-capsule-or-gold-drop-with-vitamin-b1-on-a-transparent-background-medical-template-.jpg",
      deficiency: "Fatigue, depression, irritability, headache, nausea, abdominal discomfort, trouble digesting carbohydrates." }]
 )
+vitamin.save
