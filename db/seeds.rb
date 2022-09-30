@@ -12,12 +12,12 @@ user = User.new(
   email: "mike@mike.com",
   password_digest: "password",
 )
-user.save
+user.save!
 
-Vitamin.create(
+Vitamin.create!(
   [{ name: "Vitamin B1", image_url: "https://www.nutritionadvance.com/wp-content/uploads/2020/11/thiamin-foods.jpg",
      used_for: "Helps convert food into energy and is\ncritical for nerve function",
      images: "https://previews.123rf.com/images/svshot/svshot1802/svshot180200037/96264324-gold-pill-capsule-or-gold-drop-with-vitamin-b1-on-a-transparent-background-medical-template-.jpg",
      deficiency: "Fatigue, depression, irritability, headache, nausea, abdominal discomfort, trouble digesting carbohydrates." }]
 )
-vitamin.save
+# vitamin.save!
