@@ -20,5 +20,12 @@ Vitamin.create!(
      used_for: "Helps convert food into energy and is\ncritical for nerve function",
      images: "https://previews.123rf.com/images/svshot/svshot1802/svshot180200037/96264324-gold-pill-capsule-or-gold-drop-with-vitamin-b1-on-a-transparent-background-medical-template-.jpg",
      deficiency: "Fatigue, depression, irritability, headache, nausea, abdominal discomfort, trouble digesting carbohydrates." }]
+
 )
-# vitamin.save!
+
+Vitamin.create!(
+  [{ name: "",
+     address: "",
+     speciality: "Anesthesiology",
+     image_url: "https://c8.alamy.com/comp/2DFJ8B6/anesthesiologist-medical-worker-color-icon-vector-illustration-2DFJ8B6.jpg" }]
+)
