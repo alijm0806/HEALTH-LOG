@@ -7,9 +7,9 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 user = User.new(
-  first_name: "max",
-  last_name: "White",
-  email: "max@max.com",
+  first_name: "Bruno",
+  last_name: "marquez",
+  email: "bruno@bruno.com",
   password_digest: "password",
   age: 22,
 )
