@@ -7,9 +7,9 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 user = User.new(
-  first_name: "Bruno",
+  first_name: "mike",
   last_name: "marquez",
-  email: "bruno@bruno.com",
+  email: "mike@mike.com",
   password_digest: "password",
   age: 22,
 )
@@ -61,10 +61,10 @@ Vitamin.create!(
      images: "https://www.clancymedicalgroup.com/wp-content/uploads/Vitamin-B.jpg",
      deficiency: "Tingling sensation in the toes and fingers, fatigue, nervousness shortness of breath numbness, diarrhea, and servere deficiency can result in nerve damage." },
    { name: "Vitamin K",
-    image_url: "https://potentash.com/wp-content/uploads/2021/08/Board-with-vitamin-K-written-on-it-and-green-foods-all-around-it.jpg",
-    used_for: "Essential for blood clotting and helping to\nregulate blood calcium",
-    images: "https://img.freepik.com/premium-vector/vitamin-k-green-glossy-pill-vector-illustration-health-care-organic-symbol-food-dietary_390775-816.jpg?w=2000",
-    deficiency: "Gums bleed, gastrointestinal problems, weak bones, excessive bleeding" }]
+     image_url: "https://potentash.com/wp-content/uploads/2021/08/Board-with-vitamin-K-written-on-it-and-green-foods-all-around-it.jpg",
+     used_for: "Essential for blood clotting and helping to\nregulate blood calcium",
+     images: "https://img.freepik.com/premium-vector/vitamin-k-green-glossy-pill-vector-illustration-health-care-organic-symbol-food-dietary_390775-816.jpg?w=2000",
+     deficiency: "Gums bleed, gastrointestinal problems, weak bones, excessive bleeding" }]
 )
 
 Doctor.create!(
