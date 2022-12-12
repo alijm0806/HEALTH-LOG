@@ -83,12 +83,12 @@ Content-Type: application/json
 }
 
 ### LIST-OF-VITAMINS UPDATE
-PATCH http://localhost:3000/lists_of_vitamins/485.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQ0MDg0NTl9.6ASdOn0LDzQpefNYvoZbhiuvhXAF0bFbK_-ts-ROhQg
+PATCH http://localhost:3000/lists_of_vitamins/638.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzA2OTk2MTJ9.VgrUcB2duMCuqWWmgrxx4NOV0GWEJYa6g0RJweqXugg
 Content-Type: application/json
 
 {
-"quantity": 4
+"quantity": 2
 
 
 }
