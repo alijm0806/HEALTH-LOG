@@ -6,14 +6,14 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-user = User.new(
-  first_name: "Melissa",
-  last_name: "Jendoubi",
-  email: "melissa@melissa.com",
-  password_digest: "password",
-  age: 22,
-)
-user.save!
+# user = User.new(
+#   first_name: "Mike",
+#   last_name: "White",
+#   email: "mike@mike.com",
+#   password_digest: "password",
+#   age: 22,
+# )
+# user.save!
 
 Vitamin.create!(
   [{ name: "Vitamin B2", image_url: "https://i0.wp.com/curejoy.com/wp-content/uploads/2018/05/Foods-rich-in-vitamin-b2.jpg?fit=1200%2C627&ssl=1", used_for: "Helps convert food into energy and\nsupports healthy skin, hair, blood & brain",
